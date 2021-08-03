@@ -1,0 +1,42 @@
+[
+    {
+        "id":0,
+        "nombre":"Matias",
+        "email":"matinico11@hotmail.com",
+        "reseña":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, repudiandae? Quo assumenda consequatur deleniti modi culpa, quod, et sunt odit fugit enim praesentium autem error libero hic dolorem rerum minus!",
+        "estrellas":4.5,
+        "fecha":"11/11/2020"
+    },
+    {
+        "id":1,
+        "nombre":"Florencia",
+        "email":"flordeni@hotmail.com",
+        "reseña":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, repudiandae? Quo assumenda consequatur deleniti modi culpa, quod, et sunt odit fugit enim praesentium autem error libero hic dolorem rerum minus!",
+        "estrellas":3.5,
+        "fecha":"11/02/2021"
+    },
+    {
+        "id":2,
+        "nombre":"Isabel",
+        "email":"isagut@hotmail.com",
+        "reseña":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, repudiandae? Quo assumenda consequatur deleniti modi culpa, quod, et sunt odit fugit enim praesentium autem error libero hic dolorem rerum minus!",
+        "estrellas":3,
+        "fecha":"21/01/2021"
+    },
+    {
+        "id":3,
+        "nombre":"Jose",
+        "email":"josescava@hotmail.com",
+        "reseña":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, repudiandae? Quo assumenda consequatur deleniti modi culpa, quod, et sunt odit fugit enim praesentium autem error libero hic dolorem rerum minus!",
+        "estrellas":1,
+        "fecha":"11/07/2021"
+    },
+    {
+        "id":4,
+        "nombre":"Francis Mallmann",
+        "email":"fmallmann@hotmail.com",
+        "reseña":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, repudiandae? Quo assumenda consequatur deleniti modi culpa, quod, et sunt odit fugit enim praesentium autem error libero hic dolorem rerum minus!",
+        "estrellas":5,
+        "fecha":"12/07/2021"
+    }
+]

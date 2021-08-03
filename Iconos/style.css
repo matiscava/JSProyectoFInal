@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'armasecreta-icon';
+  src:  url('fonts/armasecreta-icon.eot?z2lkrx');
+  src:  url('fonts/armasecreta-icon.eot?z2lkrx#iefix') format('embedded-opentype'),
+    url('fonts/armasecreta-icon.ttf?z2lkrx') format('truetype'),
+    url('fonts/armasecreta-icon.woff?z2lkrx') format('woff'),
+    url('fonts/armasecreta-icon.svg?z2lkrx#armasecreta-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="armasecreta-"], [class*=" armasecreta-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'armasecreta-icon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* line-height: 1; */
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.armasecreta-star:before {
+  content: "\f005";
+}
+.armasecreta-star-o:before {
+  content: "\f006";
+}
+.armasecreta-camera1:before {
+  content: "\f030";
+}
+.armasecreta-star-half:before {
+  content: "\f089";
+}
+.armasecreta-lightbulb-o:before {
+  content: "\f0eb";
+}
+.armasecreta-star-half-empty:before {
+  content: "\f123";
+}
+.armasecreta-star-half-full:before {
+  content: "\f123";
+}
+.armasecreta-star-half-o:before {
+  content: "\f123";
+}
+.armasecreta-bluetooth:before {
+  content: "\e900";
+}
+.armasecreta-mobile:before {
+  content: "\e958";
+}
+.armasecreta-mobile2:before {
+  content: "\e959";
+}
+.armasecreta-arrow-right2:before {
+  content: "\ea3c";
+}
+.armasecreta-arrow-left2:before {
+  content: "\ea40";
+}
+.armasecreta-clock:before {
+  content: "\e94e";
+}
+.armasecreta-clock2:before {
+  content: "\e94f";
+}

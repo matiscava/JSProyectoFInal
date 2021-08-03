@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asadeitor - Calcula tu asado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-menu">    
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/Logo.png" alt="" class="logo__img">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__li">
+                        <a href="index.html" class="menu__link">HOME</a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#" class="menu__link menu__link--active">CALCULA TU ASADO</a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="resenas.html" class="menu__link">RESEÑAS</a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="contacto.html" class="menu__link">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="mainEncuesta">
+
+        <div class="encuesta">
+            <h2 class="subtitulo">CALCULA TU ASADO</h2>
+            <p class="encuesta__texto">A continuacion realizaremos la encuesta que nos permitirá calcular tu Asado:</p>
+             <!--PREGUNTA 1-->
+             <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿Cuántos comensales serán?</p>
+                <input type="number" name="pregunta1" onfocusout="completarComensales()" id="pregunta1">
+                <p class="textoError"></p>
+            </div>
+            <!--PREGUNTA 2-->
+            <!-- <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿Que prioridad le dan a las achuras?</p>
+                <input type="range" name="pregunta2" id="pregunta2">
+            </div> -->
+            <!--PREGUNTA 3-->
+            <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿Qué achuras les gustaría comer?</p>
+                <div id="encuesta__achuras">
+                </div> 
+                 <div class="encuesta__contenedorCheckbox">
+                     <a href="#" class="encuesta__btnAddItem" onclick="abrirOverlay(),formularioAchuraNuevo()">Agregar achuras</a>
+                 </div>  
+            </div>
+            <!--PREGUNTA 4-->
+            <!-- <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿Que prioridad le dan a al asado?</p>
+                <input type="range" name="pregunta4" id="pregunta4">
+            </div> -->
+            <!--PREGUNTA 5-->
+            <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿Qué tipo de corte les gustaría comer?</p>
+                   <div id="encuesta__cortes">
+                   </div> 
+                    <div class="encuesta__contenedorCheckbox">
+                        <a href="#" class="encuesta__btnAddItem" onclick="abrirOverlay(),formularioCorteNuevo()">Agregar corte</a>
+                    </div>
+            </div>
+            <!--PREGUNTA 6-->
+            <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿Desea agregar algun extra?</p>
+                <div id="encuesta__extra">
+                </div> 
+                 <div class="encuesta__contenedorCheckbox">
+                     <a href="#" class="encuesta__btnAddItem" onclick="abrirOverlay(),formularioExtraNuevo()">Agregar extra</a>
+                 </div>
+            </div>
+            <!--PREGUNTA 7-->
+            <div class="encuesta__pregunta">
+                <p class="encuesta__texto">¿con qué van a hacer el fuego?</p>
+                <div class="encuesta__contenedorRadio">
+                    <div class="encuesta__cuadroRadio">
+                        <input class="encuesta__radio combustible__radio" type="radio" name="combustible" id="carbon" checked>
+                        <label for="carbon">Carbon</label>
+                    </div>
+                    <div class="encuesta__cuadroRadio">
+                        <input class="encuesta__radio combustible__radio" type="radio" name="combustible" id="leña">
+                        <label for="leña">Leña</label>
+                    </div>
+                    <div class="encuesta__cuadroRadio">
+                        <input class="encuesta__radio combustible__radio" type="radio" name="combustible" id="otro5">
+                        <label for="otro5">Otro</label>
+                    </div>
+                </div>
+            </div>
+            <!--CALCULAR-->
+            <div class="encuesta__pregunta">
+                <div class="botonFinal">
+                    <p class="encuesta__texto">Hacer calculo:</p>
+                    <input type="submit" onclick="chequeo()" class="encuesta__btnEnviar" name="enviar" id="enviar">
+                </div>
+                <p class="textoError"></p>
+            </div>
+        </div>
+
+        <!--CALCULO-->
+        <div class="calculo">
+        </div>
+        
+    </main>
+    <!-- AGREGAR ITEM -->
+    <div class="addItem">
+        <div class="encuesta__pregunta encuesta__pregunta--addItem" id="itemNuevo">
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul class="footer__redes">
+                <li class="footer__li">
+                    <a href="#" class="footer__link">
+                        <span class="footer__span"></span>
+                        Instagram
+                    </a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__link"> 
+                        <span class="footer__span"></span>
+                        Facebook
+                    </a>
+                </li>
+                <li class="footer__li">
+                    <a  href="#" class="footer__link">
+                        <span class="footer__span"></span>
+                        Twiter
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="js/popout.js"></script> -->
+    <script src="js/array.js"></script>
+    <script src="js/main.js"></script> 
+    
+</body>
+</html>
